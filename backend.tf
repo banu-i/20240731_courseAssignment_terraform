@@ -1,5 +1,7 @@
-backend "s3" {
+terraform {
+  backend "s3" {
     bucket = "techstarter-bil-iac"
-    key    = "ci-cd-ressource-example/vpc.tfstate"
+    key    = "ec2-example/vpc.tfstate"
     region = "eu-central-1"
   }
+}
